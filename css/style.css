@@ -1,0 +1,777 @@
+@font-face {
+  font-family: "NextArt";
+  src: url("../fonts/nextart/NEXT ART_Bold.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans";
+  font-weight: 700;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  background-image: url("../assets/calendar.svg");
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F2BE22 !important;
+  text-decoration-line: underline;
+}
+
+li {
+  list-style: none;
+}
+
+h3 {
+  color: #F2BE22;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #18121E;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+a, button, input[type=date]::-webkit-calendar-picker-indicator:hover {
+  cursor: url("../assets/cursor.svg"), auto;
+}
+
+section button {
+  padding: 16px 36px;
+  border: none;
+  border-radius: 4px;
+  background: #1A3E3E;
+  color: #FDFDFD;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+main {
+  color: #FDFDFD;
+  width: 100%;
+  min-height: 100vh;
+  background: url(../assets/Background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+main .inner {
+  padding: 0 19%;
+}
+main .inner header {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .inner header .rightMenu {
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+}
+main .inner header .rightMenu button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  background: #1A3E3E;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+main .inner header .rightMenu nav {
+  width: 75%;
+}
+main .inner header .rightMenu nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+main .inner header .rightMenu nav ul li {
+  align-items: center;
+}
+main .inner header .rightMenu nav ul li a {
+  color: white;
+  font-size: 18px;
+}
+main .inner header .burgermanu {
+  display: none;
+}
+main .inner .container {
+  align-items: center;
+  margin-top: 38%;
+}
+main .inner .container h1 {
+  font-size: 50px;
+  font-family: "NextArt", sans-serif;
+  line-height: 150%;
+}
+main .inner .container .inputBlocks {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  padding: 40px 42px;
+}
+main .inner .container .inputBlocks .inputBlock .ininputBlock, main .inner .container .inputBlocks .buttonBlock .ininputBlock {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid var(--wl-primary-primary-300, #E1E3E4);
+  padding: 15px 16px;
+  width: 238px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background: none;
+  color: white;
+}
+main .inner .container .inputBlocks .inputBlock .ininputBlock p, main .inner .container .inputBlocks .buttonBlock .ininputBlock p {
+  margin-right: 8px;
+}
+main .inner .container .inputBlocks .inputBlock span, main .inner .container .inputBlocks .buttonBlock span {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 8px;
+}
+main .inner .container .inputBlocks .inputBlock button, main .inner .container .inputBlocks .buttonBlock button {
+  color: #1A3E3E;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 4px;
+}
+
+.aboutOurApproach .inner {
+  padding: 10% 19%;
+  display: flex;
+}
+.aboutOurApproach .inner .videos {
+  display: inline-block;
+  align-items: center;
+}
+.aboutOurApproach .inner .videos .Mountain {
+  background-image: url(../assets/Mountain.png);
+  width: 350px;
+  height: 400px;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  opacity: 0.7;
+  animation: ani 2.5s forwards;
+  transition: 2s;
+}
+.aboutOurApproach .inner .videos .House {
+  position: relative;
+  margin: 126px 120px 0 130px;
+  background-image: url(../assets/House.png);
+  width: 350px;
+  height: 400px;
+  z-index: 2;
+  align-items: center;
+  opacity: 1;
+  animation: ani 2.5s forwards;
+  transition: 2s;
+}
+.aboutOurApproach .inner .videos .play {
+  margin: 175px 150px;
+}
+.aboutOurApproach .inner .aboutOurText {
+  padding-top: 64px;
+}
+.aboutOurApproach .inner .aboutOurText h3 {
+  margin-bottom: 10px;
+}
+.aboutOurApproach .inner .aboutOurText p {
+  margin: 40px 0;
+  color: #18121E;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.OurOffer {
+  background-color: #F3F5F4;
+}
+.OurOffer .inner {
+  padding: 10% 19%;
+  display: flex;
+  justify-content: space-between;
+}
+.OurOffer .inner .OurOfferText {
+  width: 50%;
+}
+.OurOffer .inner .OurOfferText h2 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.OurOffer .inner .OurOfferText p {
+  color: #18121E;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.OurOffer .inner .OurOfferText ul li {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.OurOffer .inner .OurOfferText ul li .offertext {
+  width: 90%;
+}
+.OurOffer .inner .OurOfferText ul li .offertext h4 {
+  color: #18121E;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.216px;
+}
+.OurOffer .inner .OurOfferText ul li .offertext p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+.OurOffer .inner .OurOfferText button {
+  margin-top: 40px;
+}
+.OurOffer .inner .OurOfferImg {
+  margin-top: 40px;
+}
+
+.Vacationers .inner {
+  padding: 7% 19%;
+  text-align: center;
+}
+.Vacationers .inner .PopularDirections {
+  text-align: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Vacationers .inner .PopularDirections li {
+  margin-top: 50px;
+  width: 380px;
+  height: 500px;
+}
+.Vacationers .inner .PopularDirections li .assessment {
+  align-items: center;
+  display: flex;
+  border-radius: 4px 0px 0px 4px;
+  background: rgba(253, 253, 253, 0.4);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  display: inline-flex;
+  padding: 4px 9px;
+  margin-top: 50px;
+  margin-left: 315px;
+}
+.Vacationers .inner .PopularDirections li .poor {
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 325px;
+  border-radius: 0px 0px 32px 32px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  color: #FDFDFD;
+}
+.Vacationers .inner .PopularDirections li .poor .text h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.Vacationers .inner .PopularDirections li .poor .text p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.Vacationers .inner .PopularDirections li .poor .price {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.Vacationers .inner .PopularDirections .lake, .Vacationers .inner .PopularDirections .lakeNo {
+  background-image: url(../assets/lake.png);
+}
+.Vacationers .inner .PopularDirections .night {
+  background-image: url(../assets/night.png);
+}
+.Vacationers .inner .PopularDirections .yoga {
+  background-image: url(../assets/yoga.png);
+}
+.Vacationers .inner .PopularDirections .lakeNo {
+  display: none;
+}
+.Vacationers .inner button {
+  margin-top: 50px;
+}
+
+.shareImp {
+  background-color: #F3F5F4;
+}
+.shareImp .inner {
+  padding: 7% 19%;
+  text-align: center;
+}
+.shareImp .inner .articles {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.shareImp .inner .articles .article {
+  width: 46%;
+  margin: 0;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #FDFDFD;
+  text-align: left;
+  display: flex;
+}
+.shareImp .inner .articles .article .text {
+  padding-top: 16px;
+  margin-left: 24px;
+  position: relative;
+}
+.shareImp .inner .articles .article .text h4 {
+  color: #18121E;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.shareImp .inner .articles .article .text p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.shareImp .inner .articles .article .text .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.shareImp .inner .articles .article .text .bottom p {
+  color: #F2BE22;
+}
+.shareImp .inner .articles .article .text .bottom a {
+  color: #1A3E3E;
+}
+.shareImp .inner button {
+  margin-top: 50px;
+}
+
+.photoReport .inner {
+  padding: 7% 19%;
+  text-align: center;
+}
+.photoReport .inner .imeges {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: inline-flex;
+  gap: 19px;
+  flex-wrap: wrap;
+}
+
+footer .inner {
+  padding: 0 19%;
+}
+footer .inner .relevant {
+  position: relative;
+  z-index: 1;
+  border-radius: 6px;
+  background: #FDFDFD;
+  box-shadow: 0px 0px 15px 0px rgba(24, 18, 30, 0.12);
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+}
+footer .inner .relevant .title {
+  width: 45%;
+}
+footer .inner .relevant .enterEmail {
+  width: 50%;
+}
+footer .inner .relevant .enterEmail h5 {
+  color: #18121E;
+  font-size: 16px;
+  font-weight: 600;
+}
+footer .inner .relevant .enterEmail .inputEmail {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .inner .relevant .enterEmail .inputEmail input {
+  color: #18121E;
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+  border-radius: 4px;
+  background: #F3F5F4;
+  padding: 12px 54px 12px 24px;
+}
+footer .inner .relevant .enterEmail .inputEmail button {
+  color: #FDFDFD;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background: #1A3E3E;
+}
+footer .inner .relevant .enterEmail p {
+  margin-top: 8px;
+  color: #18121E;
+  font-size: 14px;
+  font-weight: 600;
+}
+footer .grinfooter {
+  width: 100%;
+  background-color: #1A3E3E;
+  margin-top: -5%;
+  z-index: -1;
+}
+footer .grinfooter .inner {
+  padding: 178px 19% 80px 19%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .grinfooter .inner h5 {
+  color: #F3F5F4;
+  font-size: 20px;
+  font-weight: 700;
+}
+footer .grinfooter .inner .aboutCompany {
+  width: 40%;
+}
+footer .grinfooter .inner .aboutCompany p {
+  margin-top: 17px;
+  color: var(--white-color-100, #FFF);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+footer .grinfooter .inner .aboutCompany .emTel {
+  margin-top: 80px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+footer .grinfooter .inner .aboutCompany ul {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+footer .grinfooter .inner .OurService, footer .grinfooter .inner .impForJourney {
+  width: 25%;
+}
+footer .grinfooter .inner .OurService ul li, footer .grinfooter .inner .impForJourney ul li {
+  margin-left: 14px;
+  margin-top: 16px;
+  list-style-image: url(../assets/arrow.svg);
+}
+footer .grinfooter .inner .OurService ul li a, footer .grinfooter .inner .impForJourney ul li a {
+  color: #FDFDFD;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+footer .grinfooter .inner .OurService ul li:hover, footer .grinfooter .inner .impForJourney ul li:hover {
+  list-style-image: url(../assets/yellowArrow.svg);
+}
+footer .grinfooter .inner .OurService ul li:hover a, footer .grinfooter .inner .impForJourney ul li:hover a {
+  color: #F2BE22;
+  text-decoration-line: underline;
+}
+footer .blackfooter {
+  width: 100%;
+  position: relative;
+  background-color: #18121E;
+}
+footer .blackfooter .inner {
+  padding: 24px 19%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .blackfooter .inner p {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+}
+footer .blackfooter .inner a {
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration-line: underline;
+}
+
+@media (max-width: 1860px) {
+  .inner {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+  }
+}
+@media (max-width: 1715px) {
+  main .inner .container {
+    margin-top: 30%;
+  }
+  .inner {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+}
+@media (max-width: 1500px) {
+  .inner {
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+  }
+}
+@media (max-width: 1230px) {
+  main .inner header nav {
+    width: 60%;
+  }
+  main .inner .container .inputBlocks .inputBlock .ininputBlock {
+    width: 170px;
+  }
+  .Vacationers .inner .PopularDirections {
+    justify-content: space-evenly;
+  }
+  .Vacationers .inner .PopularDirections .lakeNo {
+    display: block;
+  }
+  .shareImp .inner .articles .article {
+    width: 100%;
+  }
+  .photoReport .inner .imeges {
+    display: block;
+  }
+  footer .grinfooter .inner .aboutCompany .emTel {
+    display: block;
+  }
+}
+@media (max-width: 1000px) {
+  main .inner header .logo img {
+    width: 100px;
+  }
+  main .inner header .rightMenu {
+    flex-direction: row-reverse;
+  }
+  main .inner header .rightMenu nav {
+    display: none;
+  }
+  main .inner header .rightMenu button {
+    display: none;
+  }
+  main .inner header .rightMenu .burgermanu {
+    display: block;
+  }
+  main .inner header .rightMenu .burgermanu img {
+    width: 50px;
+  }
+  main .inner header .greenBurgerMenu {
+    z-index: 50;
+    display: block;
+    width: 50%;
+    height: 60%;
+    background-color: #1A3E3E;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: normal;
+    padding: 16px 3% 0 5%;
+    transition: 1s;
+  }
+  main .inner header .greenBurgerMenu .burgermanu {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  main .inner header .greenBurgerMenu .burgermanu img {
+    content: url("../assets/closeIcon.svg");
+  }
+  main .inner header .greenBurgerMenu nav {
+    display: block;
+  }
+  main .inner header .greenBurgerMenu nav ul {
+    margin-left: 16px;
+    display: block;
+  }
+  main .inner header .greenBurgerMenu nav ul li {
+    margin-top: 16px;
+    list-style-image: url(../assets/arrow.svg);
+  }
+  main .inner header .greenBurgerMenu nav ul li:hover {
+    list-style-image: url(../assets/yellowArrow.svg);
+  }
+  main .inner .container {
+    margin-top: 50%;
+  }
+  main .inner .container h1 {
+    font-size: 40px;
+  }
+  main .inner .container .inputBlocks {
+    background: none;
+  }
+  main .inner .container .inputBlocks .buttonBlock button {
+    color: #1A3E3E;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 26px 46px;
+    border: none;
+    border-radius: 6px;
+  }
+  main .inner .container .inputBlocks .inputBlock span, main .inner .container .inputBlocks .inputBlock {
+    display: none;
+  }
+  .OurOffer .inner .OurOfferImg {
+    display: none;
+  }
+  .OurOffer .inner .OurOfferText {
+    width: 100%;
+  }
+  .aboutOurApproach .inner .videos .Mountain {
+    display: none;
+  }
+  .aboutOurApproach .inner .videos .House {
+    margin: 65px 50px 0 0;
+  }
+  footer .inner .relevant .enterEmail .inputEmail {
+    display: block;
+  }
+}
+@media (max-width: 830px) {
+  .aboutOurApproach .inner {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutOurApproach .inner .videos .House {
+    margin: 65px 0;
+  }
+  .Vacationers .inner .PopularDirections {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .Vacationers .inner .PopularDirections li {
+    margin-top: 50px;
+    width: 380px;
+    height: 500px;
+    margin: 50px 5%;
+  }
+  footer .inner .relevant {
+    display: block;
+  }
+  footer .inner .relevant .title {
+    width: 100%;
+  }
+  footer .inner .relevant .enterEmail {
+    width: 100%;
+  }
+  footer .grinfooter .inner {
+    padding: 178px 19% 80px 19%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  footer .grinfooter .inner .aboutCompany {
+    width: auto;
+  }
+  footer .grinfooter .inner .OurService, footer .grinfooter .inner .impForJourney {
+    margin-top: 20px;
+    width: auto;
+  }
+  .photoReport .inner .imeges img {
+    border-radius: 6px;
+    width: 280px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 700px) {
+  .photoReport .inner .imeges {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 600px) {
+  main .inner .container h1 {
+    font-size: 30px;
+  }
+  .shareImp .inner .articles {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .shareImp .inner .articles .article {
+    width: 60%;
+    margin: 0;
+    padding: 16px;
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .shareImp .inner .articles .article img {
+    width: 285px;
+  }
+  .shareImp .inner .articles .article .text {
+    position: relative;
+    margin-left: 0;
+    padding: 16px;
+    margin-top: -25%;
+    z-index: 3;
+    background: white;
+    border-radius: 0 0 10px 10px;
+  }
+  .shareImp .inner .articles .article .text h4 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .shareImp .inner .articles .article .text p {
+    font-size: 14px;
+  }
+  .shareImp .inner .articles .article .text .bottom {
+    margin-top: 16px;
+    position: static;
+  }
+  footer .inner .relevant {
+    padding: 40px 50px;
+  }
+  footer .inner .relevant h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  main .inner header .greenBurgerMenu {
+    width: 80%;
+  }
+}/*# sourceMappingURL=style.css.map */
